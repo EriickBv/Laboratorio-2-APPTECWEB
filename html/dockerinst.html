@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Instalación de Docker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Guía de Docker</h1>
+    </header>
+
+    <main>
+        <h2>Instalación y Ejecución de Docker en Windows</h2>
+        
+        <h3>Requisitos Previos</h3>
+        <ul>
+            <li>Windows 10/11 de 64 bits (Pro, Enterprise o Education). Si usas Home, necesitarás WSL 2 (Windows Subsystem for Linux).</li>
+            <li>Virtualización habilitada en la BIOS.</li>
+        </ul>
+
+        <h3>Proceso de Instalación</h3>
+        <ol>
+            <li>Descarga el instalador de <strong>Docker Desktop</strong> desde la página oficial de Docker.</li>
+            <li>Ejecuta el archivo <code>Docker Desktop Installer.exe</code>.</li>
+            <li>Sigue las instrucciones del asistente. Asegúrate de marcar la opción para instalar <strong>WSL 2</strong> si te lo solicita (es recomendado para mejor rendimiento).</li>
+            <li>Una vez finalizada la instalación, reinicia tu computadora.</li>
+            <li>Abre la aplicación "Docker Desktop". Acepta los términos y condiciones.</li>
+        </ol>
+
+        <h3>Ejecución y Comprobación</h3>
+        <p>Para comprobar que Docker está funcionando correctamente, abre tu terminal (PowerShell o CMD) y ejecuta:</p>
+        <code>docker run hello-world</code>
+        <p>Este comando descargará una imagen de prueba y mostrará un mensaje de confirmación, indicando que el servicio está activo y listo para usarse.</p>
+    </main>
+</body>
+</html>
