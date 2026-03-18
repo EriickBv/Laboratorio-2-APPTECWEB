@@ -29,7 +29,7 @@
 
         <div class="proyecto">
             <h3>3. docker pause and unpause</h3>
-            <p>El comando pause congela todos los procesos activos de un contenedor, mientras que unpause los reanuda.</p>
+            <p>El comando pause congela todos los procesos activos de un contenedor, mientras que unpause los reanuda. En ambos casos se debe especificar el nombre  del contenedor</p>
         </div>
 
         <div class="proyecto">
@@ -44,7 +44,7 @@
 
         <div class="proyecto">
             <h3>6. docker volume</h3>
-            <p>Permite la gestión completa de volúmenes (crear, listar, inspeccionar y eliminar) para el almacenamiento de datos.</p>
+            <p>Permite la gestión completa de volúmenes (crear [create], listar [ls], inspeccionar [inspect {Nombre volumen}] y eliminar [rm {Nombre volumen}]) para el almacenamiento de datos.</p>
         </div>
 
         <div class="proyecto">
@@ -64,7 +64,7 @@
 
         <div class="proyecto">
             <h3>10. docker ps</h3>
-            <p>Muestra la lista de contenedores en ejecución, con opciones para ver el tamaño en disco y los contenedores finalizados.</p>
+            <p>Muestra la lista de contenedores en ejecución, con opciones para ver el tamaño en disco [-s] y los contenedores finalizados [-a].</p>
         </div>
 
         <div class="proyecto">
@@ -76,7 +76,7 @@
             <h3>12. docker rename</h3>
             <p>Cambia el nombre de un contenedor existente para facilitar su diferenciación según su finalidad.</p>
         </div>
-
+sudo flatpak remote-add --if-not-exists --system flathub https://dl.flathub.org/repo/flathub.flatpakrepo
         <div class="proyecto">
             <h3>13. docker commit</h3>
             <p>Crea una nueva imagen a partir de los cambios realizados en el sistema de archivos de un contenedor.</p>
@@ -84,7 +84,7 @@
 
         <div class="proyecto">
             <h3>14. docker network</h3>
-            <p>Comando de gestión de red para conectar, crear, desconectar o eliminar redes entre servicios y contenedores.</p>
+            <p>Comando de gestión de red para conectar [connect], crear [create], desconectar [disconnect] o eliminar [rm] redes entre servicios y contenedores.</p>
         </div>
 
         <div class="proyecto">
@@ -94,17 +94,17 @@
 
         <div class="proyecto">
             <h3>16. docker update</h3>
-            <p>Actualiza dinámicamente la configuración de un contenedor, como límites de memoria, CPUs o políticas de reinicio.</p>
+            <p>Actualiza dinámicamente la configuración de un contenedor, como límites de memoria [--memory], CPUs [--cpus] o políticas de reinicio [--restart].</p>
         </div>
 
         <div class="proyecto">
             <h3>17. docker plugin install</h3>
-            <p>Gestiona la instalación y activación de plugins para añadir nuevas funcionalidades al host de Docker.</p>
+            <p>Gestiona la instalación y activación de plugins para añadir nuevas funcionalidades al host de Docker. Este acepta los argumentos [create] para crear nuevos plugins, [enable] para activar plugins ya instalados, [install] para instalar nuevos plugins, [rm] para eliminar plugins y [ls] para mostrar una lista de plugins. </p>
         </div>
 
         <div class="proyecto">
             <h3>18. docker container</h3>
-            <p>Comando general para la gestión de contenedores, que abarca desde la creación y ejecución hasta el reinicio y eliminación.</p>
+            <p>Comando general para la gestión de contenedores, permite la creación de contenedor [create], creacion de imagen tras cambios en contenedor [commit], ejecucion de comandos dentro de un contenedor ejecurandose [exec], detener un contenedor [kill], mostrar una lista de contenedores dentro de un host [ls],  reiniciar un contenedor [restart], crear un contenedor a partir de una imagen y ejecutarlo [run], y por ultimo eliminar un contenedor [rm].</p>
         </div>
 
         <div class="proyecto">
@@ -114,7 +114,7 @@
 
         <div class="proyecto">
             <h3>20. docker swarm</h3>
-            <p>Gestiona clústeres de Docker (enjambres), permitiendo iniciar, unirse, abandonar o actualizar un grupo de máquinas que trabajan juntas.</p>
+            <p>Gestiona clústeres de Docker (enjambres), permitiendo iniciar [init], unirse [join], abandonar leave o actualizar [update] un grupo de máquinas que trabajan juntas.</p>
         </div>
     </section>
 </main>
